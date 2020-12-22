@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <title>test</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar__logo_img" >
+            <a href="#" class="navbar__logo">
+                <img  src="./img/logo.png" alt="logo">
+            </a>
+            </div>
+            <div class="menu__btn" id="menu_toggle">
+                 
+                <svg id="menu" style="position: relative;" onclick="toggleMenu()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                    <path fill="#231F20" d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"/>
+                    <path fill="#231F20" d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"/>
+                    <path fill="#231F20" d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"/>
+                </svg>
+
+                <ul class="dropdown-content" id="menu-box" style="display: none">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#"> Дерматити</a></li>
+                    <li><a href="#">Скінгард</a></li>
+                    <li><a href="#">Спосіб застосування</a></li>
+                    <li><a href="#">Де купити?</a></li>
+                    <li><a href="#">Контакти</a></li>
+        
+                </ul>
+
+            </div>  
+            <ul class="navbar__list">
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Головна
+                    </a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Дерматити
+                    </a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Скінгард
+                    </a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Спосіб застосування
+                    </a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Де купити?
+                    </a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__href">
+                        Контакти
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+        <div class="content">
+            <div class="content__wrapper">
+                <p class="content__before">
+                    #вiд Arterium
+                </p>
+              
+                <h1 class="content__headline">
+                    <span class="content__headline-before">Спрей для </span>
+                    зовнішнього застосування
+                </h1>
+                <p class="conten__text">
+                    Спрей для лікування локальних і множинних грибкових дерматитів тварин
+                </p>
+                <button class="content__btn">
+                    Де купити?
+                </button>
+            </div>
+            <div class="content__image">
+                <img class="content__image-img" src="./img/catanddog.png" alt="cat and dog">
+            </div>
+        </div>
+    </header>
+    <section class="wrapper">
+        
+            <div class="wrapper__itemssearch wrapper__itemssearch-first">
+                <img class="wrapper__img" src="./img/1.png" alt="">
+                <p class="wrapper__text">
+                    <span style="font-weight: bold;"> 
+                        Висока ефективність при лікуванні
+                    </span>
+                    грибкових і бактеріальних дерматитів у собак і котів
+                
+                </p>
+    
+            </div>
+            <div class="wrapper__itemssearch wrapper__itemssearch-second">
+                <img class="wrapper__img" src="./img/2.png" alt="">
+                <p class="wrapper__text">
+                    <span style="font-weight: bold;">  
+                        Висока ефективність при лікуванні
+                    </span>
+                    грибкових і бактеріальних дерматитів у собак і котів
+                </p>
+    
+            </div>
+            <div class="wrapper__itemssearch last">
+                <img class="wrapper__img" src="./img/3.png" alt="">
+                <p class="wrapper__text">
+                    <span style="font-weight: bold;"> 
+                        Висока ефективність при лікуванні
+                    </span>
+                    грибкових і бактеріальних дерматитів у собак і котів
+                </p>
+    
+        </div>
+    </section>
+    <section class="wrapper">
+        
+        <div class="wrapper__itemssearch wrapper__itemssearch-first">
+            <img class="wrapper__img" src="./img/4.png" alt="">
+            <p class="wrapper__text">
+                <span style="font-weight: bold;"> 
+                    Не вимагає купання
+                </span>
+                
+            </p>
+
+        </div>
+        <div class="wrapper__itemssearch last">
+            <img class="wrapper__img" src="./img/Frame 6.png" alt="">
+            <p class="wrapper__text">
+                <span style="font-weight: bold;">  
+                    Має приємний запах дині
+                </span>
+                
+            </p>
+
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+              var menuBox = document.getElementById('menu-box');    
+              if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+                menuBox.style.display = "none";
+              }
+              else { // if is menuBox hidden, display it
+                menuBox.style.display = "block";
+              }
+            }
+        </script>
+</body>
+</html>
